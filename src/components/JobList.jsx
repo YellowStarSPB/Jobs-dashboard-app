@@ -10,8 +10,7 @@ const JobList = () => {
     const currentFilters = useSelector(selectFilters)
 
     const positions = useSelector((state) => selectVisiblePositions(state, currentFilters))
-    console.log(positions)
-
+    
     const handleAddFilter = (filter) => {
         dispatch(addFilter(filter))
     }
